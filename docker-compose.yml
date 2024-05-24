@@ -1,0 +1,11 @@
+version: "2"
+services:
+  paddle:
+    #    build:
+    #      context: .
+    #      dockerfile: Dockerfile
+    image: registry.cn-shenzhen.aliyuncs.com/luler/hello_translation
+    ports:
+      - 3344:5000
+    volumes:
+      - .:/root/work
